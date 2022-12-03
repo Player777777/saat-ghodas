@@ -79,15 +79,23 @@ html(lang='en')
                         // to get an API token!
 
                         form#contactForm
-                            <form action="https://formsubmit.co/7horses619@gmail.com" method="POST">
-                                <input type="text" placeholder="Name" name="name" required>
-                                <br>
-                                <input type="email" size="30" placeholder="Email" name="email">
-                                <br>
-                                <input type="number" placeholder="Phone Number" name="phonenumber">
-                                <br>
+                            <form target="_blank" action="https://formsubmit.co/7horses619@gmail.com" method="POST">
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <input type="text" name="name" class="form-control" placeholder="Full Name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="email" name="email" class="form-control" placeholder="Email Address">
+                                        </div>
+                                        <div class="col">
+                                            <input type="number" name="phonenumber" class="form-control" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                </div>
                                 <button class="btn btn-primary btn-xl" type="submit">Submit</button>
                             </form>
+
 
         // About
         section#about.page-section.bg-primary
